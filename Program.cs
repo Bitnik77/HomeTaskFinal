@@ -7,7 +7,7 @@ Console.Write("Введите слова(символы) строки через
 string row = Console.ReadLine()!;
 //далее создаем массив из подстрок, разделенных пробелами и удаляем пустые (только с пробелами) подстроки
 string[] Row = row.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-Console.WriteLine(String.Join(" ", Row));
 
 string[] RowLength3 = Array.FindAll(Row, person => person.Length <= 3);
-foreach (var person in RowLength3) Console.WriteLine(person);
+foreach (var person in RowLength3) ;
+Console.WriteLine("Массив из строк с длиной меньше или равно 3 символам: " + String.Join(" ", RowLength3));
