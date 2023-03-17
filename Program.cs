@@ -5,7 +5,6 @@
 void ArrayElements3Simbol(string[] Row) // метод записи в массив элементов с длиной <=3 и вывода в консоль
 {
     string[] RowLength3 = Array.FindAll(Row, person => person.Length <= 3);
-    foreach (var person in RowLength3) ;
     Console.WriteLine("Массив из строк с длиной меньше или равно 3 символам: " + String.Join(" ", RowLength3));
 }
 
